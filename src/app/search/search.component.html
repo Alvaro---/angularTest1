@@ -1,0 +1,14 @@
+<div class="search">
+  <h1>Notas</h1>
+  <p>Buscar Notas</p>
+
+  <div class="buscador">
+    <p>{{ search }}</p>
+    <input
+      type="text"
+      placeholder="Ingresa un nombre para buscar"
+      [(ngModel)]="search"
+      (keydown)="changeSearch($event)"
+    />
+  </div>
+</div>
